@@ -1,0 +1,62 @@
+﻿@using TodoApplication.Models
+@page "/"
+
+<PageTitle>TodoList</PageTitle>
+
+<h1>TodoList</h1>
+
+<p>Welcome to your To-Do List App! Here, you can easily keep track of your tasks.
+    Mark tasks as completed when you're done, and feel free to delete any tasks you no longer need.</p>
+
+<h4>Let's get organized!</h4>
+
+<!-- Input field to add new tasks -->
+<div class="d-flex align-items-center">
+    <input type="text" @bind="newTodo" class="form-control flex-grow-1" @onkeydown="HandleEnter" />
+    <button class="btn btn-primary ms-3" @onclick="AddTodo">Add</button>
+</div>
+
+<!-- Buttons to switch between Todo and Completed components -->
+<button class="btn btn-outline-primary" @onclick="ShowTodoComponent">Todo</button>
+<button class="btn btn-outline-secondary" @onclick="ShowCompletedComponent">Completed</button>
+
+<DynamicComponent Type="@currentComponent"
+    Parameters="currentComponent == typeof(Todo) 
+        ? new Dictionary<string, object> { { nameof(Todo.todos), todos }, { nameof(Todo.ToggleCompleted), EventCallback.Factory.Create<TodoItem>(this, ToggleTodoCompleted) }, { nameof(Todo.Delete), EventCallback.Factory.Create<TodoItem>(this, DeleteTodo) } }
+        : new Dictionary<string, object> { { nameof(Completed.completedTodos), todos.Where(t => t.IsCompleted).ToList() }, { nameof(Completed.UndoTodo), EventCallback.Factory.Create<TodoItem>(this, ToggleTodoCompleted) } }" />
+
+@code {
+    private Type currentComponent = typeof(Todo);
+    private List<TodoItem> todos = new();
+    private string newTodo = string.Empty;
+
+    private void ShowTodoComponent() => currentComponent = typeof(Todo);
+    private void ShowCompletedComponent() => currentComponent = typeof(Completed);
+
+    private void HandleEnter(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(newTodo))
+        {
+            AddTodo();
+        }
+    }
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty; // Tømmer inndatafeltet
+        }
+    }
+
+    private void ToggleTodoCompleted(TodoItem todo)
+    {
+        todo.IsCompleted = !todo.IsCompleted;
+    }
+
+    private void DeleteTodo(TodoItem todo)
+    {
+        todos.Remove(todo);
+    }
+}

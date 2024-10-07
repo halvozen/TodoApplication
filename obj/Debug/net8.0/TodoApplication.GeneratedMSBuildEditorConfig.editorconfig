@@ -1,0 +1,51 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = TodoApplication
+build_property.RootNamespace = TodoApplication
+build_property.ProjectDir = /Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/Components/Completed.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wbGV0ZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/Components/Todo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Ub2RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9g81a05p3n
+
+[/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-c7ucy6nf22

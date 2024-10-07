@@ -1,0 +1,39 @@
+@using TodoApplication.Models
+@using Microsoft.AspNetCore.Components
+
+<h4 class="m-5">Active Todos:</h4>
+
+@if (!todos.Any(t => !t.IsCompleted))
+{
+    <p>No active tasks at the moment. Add a new task!</p>
+}
+else
+{
+    <ul class="list-group">
+    @foreach (var todo in todos.Where(t => !t.IsCompleted))
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span style="text-decoration: none;">
+                    @todo.Title
+                </span>
+
+                <div>
+                    <button class="btn btn-success btn-sm mt-5"
+                        @onclick="() => ToggleCompleted.InvokeAsync(todo)">Completed</button>
+                    <button class="btn btn-danger btn-sm mt-5" @onclick="() => Delete.InvokeAsync(todo)">Delete</button>
+                </div>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    [Parameter]
+    public List<TodoItem> todos { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<TodoItem> ToggleCompleted { get; set; }
+
+    [Parameter]
+    public EventCallback<TodoItem> Delete { get; set; }
+}
