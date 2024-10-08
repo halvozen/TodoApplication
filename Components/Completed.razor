@@ -1,7 +1,7 @@
 @using TodoApplication.Models
 @using Microsoft.AspNetCore.Components
 
-<h3>Completed Todos</h3>
+<h3 class="mt-5">Completed Todos</h3>
 
 @if (!completedTodos.Any())
 {
@@ -15,7 +15,7 @@ else
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <span style="text-decoration: line-through;">@todo.Title</span>
                 <div>
-                    <button class="btn btn-secondary btn-sm m-2" @onclick="() => UndoTodo.InvokeAsync(todo)">Undo</button>
+                    <button class="btn btn-secondary btn-sm" @onclick="() => UndoTodo.InvokeAsync(todo)">Undo</button>
                 </div>
             </li>
         }
