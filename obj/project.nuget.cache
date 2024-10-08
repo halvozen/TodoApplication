@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eG25rLv4Kk4=",
+  "dgSpecHash": "yRnNn4Qal98=",
   "success": true,
-  "projectFilePath": "/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/TodoApplication.csproj",
+  "projectFilePath": "/Users/tande-halvorsen/git-repo/TodoApplication/TodoApplication.csproj",
   "expectedPackageFiles": [
     "/Users/tande-halvorsen/.nuget/packages/microsoft.aspnetcore.authorization/8.0.7/microsoft.aspnetcore.authorization.8.0.7.nupkg.sha512",
     "/Users/tande-halvorsen/.nuget/packages/microsoft.aspnetcore.components/8.0.7/microsoft.aspnetcore.components.8.0.7.nupkg.sha512",

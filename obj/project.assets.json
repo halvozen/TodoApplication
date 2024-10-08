@@ -2064,11 +2064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/TodoApplication.csproj",
+      "projectUniqueName": "/Users/tande-halvorsen/git-repo/TodoApplication/TodoApplication.csproj",
       "projectName": "TodoApplication",
-      "projectPath": "/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/TodoApplication.csproj",
+      "projectPath": "/Users/tande-halvorsen/git-repo/TodoApplication/TodoApplication.csproj",
       "packagesPath": "/Users/tande-halvorsen/.nuget/packages/",
-      "outputPath": "/Users/tande-halvorsen/Projects/Emne6-SoftwareDesignDel1-kopi/TodoApplication/obj/",
+      "outputPath": "/Users/tande-halvorsen/git-repo/TodoApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tande-halvorsen/.nuget/NuGet/NuGet.Config"
