@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9f5X4geY4CPZWMDgYf6GxmCyDLLGE6Nd3poYCVEqfY8=",
+  "Hash": "Wl//bq+cBVXAGFcC8WnextHh0359T4ltlS5dUVl5PAk=",
   "Source": "TodoApplication",
   "BasePath": "/",
   "Mode": "Root",
@@ -4729,6 +4729,25 @@
       "OriginalItemSpec": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/System.ObjectModel.wasm"
     },
     {
+      "Identity": "/Users/tande-halvorsen/git-repo/TodoApplication/obj/Debug/net8.0/compressed/aaf0ln3quo.gz",
+      "SourceId": "TodoApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.ComponentModel.Annotations.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/System.ComponentModel.Annotations.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/System.ComponentModel.Annotations.wasm"
+    },
+    {
       "Identity": "/Users/tande-halvorsen/git-repo/TodoApplication/obj/Debug/net8.0/compressed/abskhjw8ng.gz",
       "SourceId": "TodoApplication",
       "SourceType": "Computed",
@@ -7748,25 +7767,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json"
-    },
-    {
-      "Identity": "/Users/tande-halvorsen/git-repo/TodoApplication/obj/Debug/net8.0/compressed/aaf0ln3quo.gz",
-      "SourceId": "TodoApplication",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.ComponentModel.Annotations.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/System.ComponentModel.Annotations.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/tande-halvorsen/git-repo/TodoApplication/bin/Debug/net8.0/wwwroot/_framework/System.ComponentModel.Annotations.wasm"
     },
     {
       "Identity": "/Users/tande-halvorsen/git-repo/TodoApplication/obj/Debug/net8.0/scopedcss/bundle/TodoApplication.styles.css",
