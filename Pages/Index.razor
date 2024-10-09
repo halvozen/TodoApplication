@@ -20,16 +20,21 @@
 <button class="btn btn-outline-primary mt-3 me-2" @onclick="ShowTodoComponent">Todo</button>
 <button class="btn btn-outline-success mt-3" @onclick="ShowCompletedComponent">Completed</button>
 
+<!-- Dynamic component to display either Todo or Completed component -->
 <DynamicComponent Type="@currentComponent" Parameters="GetComponentParameters()" />
 
 @code {
-    private Type currentComponent = typeof(Todo);
-    private List<TodoItem> todos = new();
-    private string newTodo = string.Empty;
+    private Type currentComponent = typeof(Todo); // Holds the current component type (Todo or Completed)
+    private List<TodoItem> todos = new(); // List to store all tasks
+    private string newTodo = string.Empty; // Holds the new task input from the user
 
+    <!-- Sets the current component to the Todo component -->
     private void ShowTodoComponent() => currentComponent = typeof(Todo);
+
+    <!-- Sets the current component to the Completed component  -->
     private void ShowCompletedComponent() => currentComponent = typeof(Completed);
 
+    <!-- Handles the Enter key event for adding a new task  -->
     private void HandleEnter(KeyboardEventArgs e)
     {
         if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(newTodo))
@@ -38,35 +43,41 @@
         }
     }
 
+    <!-- Adds a new task to the todo list -->
     private void AddTodo()
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
             todos.Add(new TodoItem { Title = newTodo });
-            newTodo = string.Empty; // Tømmer inndatafeltet
+            newTodo = string.Empty;
         }
     }
 
+    <!-- Toggles the completion status of a task -->
     private void ToggleTodoCompleted(TodoItem todo)
     {
         todo.IsCompleted = !todo.IsCompleted;
     }
 
+    <!-- Deletes a task from the todo list -->
     private void DeleteTodo(TodoItem todo)
     {
         todos.Remove(todo);
     }
 
+    <!-- Generates parameters to pass to the dynamic component (Todo or Completed) -->
     private IDictionary<string, object> GetComponentParameters()
     {
         if (currentComponent == typeof(Todo))
         {
+
             return new Dictionary<string, object>
 {
 { nameof(Todo.todos), todos },
 { nameof(Todo.ToggleCompleted), EventCallback.Factory.Create<TodoItem>(this, ToggleTodoCompleted) },
 { nameof(Todo.Delete), EventCallback.Factory.Create<TodoItem>(this, DeleteTodo) }
 };
+
         }
         else
         {
